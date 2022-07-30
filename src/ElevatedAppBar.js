@@ -99,10 +99,10 @@ export default function ElevateAppBar(props) {
             </Menu>
           </Box>
           <Box sx={{ flexGrow:1 ,display: {xs: 'flex', md: 'none'} }}>
-          <img src={Logo} style={{height: '30px', width: '80px'}} />
+          <img src={Logo} style={{ width: '160px'}} />
         </Box>
           <Box sx={{display: {xs: 'none', md: 'flex'} }} >
-          <img src={Logo} style={{height: '30px', width: '80px' }} />
+          <img src={Logo} style={{ width: '160px' }} />
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: {xs: 'none', md: 'center'} }}>
             {pages.map((page) => (
@@ -114,6 +114,28 @@ export default function ElevateAppBar(props) {
                 {page}
               </Button>
             ))}
+          </Box>
+          <Box>
+          <Typography variant='h6' style={{
+            color: 'darkblue',
+            paddingRight: '10px'
+          }} sx={{
+            display: {
+              xs : 'none',
+              md : 'none',
+              lg : 'inline-block'
+            }
+          }}>
+          +91 964 371 9927
+          </Typography>
+          </Box>
+          <Box>
+          <Button variant='contained' style={{
+            backgroundColor: 'darkblue',
+            fontFamily: 'sans-serif'
+          }}>
+          Free Trial
+          </Button>
           </Box>
         </Toolbar>
       </Container>

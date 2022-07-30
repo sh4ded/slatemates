@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.popup:hover {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ffffa1;
+  transform: skewX(-7deg);
+}

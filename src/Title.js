@@ -1,17 +1,17 @@
 import React from 'react';
 
-function Title () {
+function Title ({text, color, fontSize, lineHeight}) {
 	return (
-	<div style={{paddingLeft: '10%', paddingRight: '10%', paddingTop: '5%'}}>
+	<div>
 	<span style={{
-		color: 'pink', 
-		fontSize: '60px', 
+		color: color, 
+		fontSize: fontSize, 
 		fontWeight: '900', 
-		fontFamily: "'Amazon Ember', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+		fontFamily: "'Roboto', sans-serif",
 		letterSpacing: '1px',
-		lineHeight: '70px'
-		}}>
-	One-to-one online tuitions from home
+		lineHeight: lineHeight
+	}}>
+	{text}
 	</span>
 	</div>)
 }
